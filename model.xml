@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<extendedFeatureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendposition" value="520,22"/>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="false"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="vertical"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="4"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="JogoSerio">
+			<and mandatory="true" name="Boi">
+				<alt mandatory="true" name="Boi_Peso">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Boi_Peso_Gordo"/>
+					<feature name="Boi_Peso_Magro"/>
+				</alt>
+				<alt mandatory="true" name="Boi_Saude">
+					<feature name="Boi_Sad_Normal"/>
+					<feature name="Boi_Sad_Doente"/>
+					<feature name="Boi_Sad_Tratamento"/>
+				</alt>
+			</and>
+			<and mandatory="true" name="Piquete">
+				<alt mandatory="true" name="Piq_Condicao">
+					<feature name="Piq_Cond_Normal"/>
+					<feature name="Piq_Cond_Danificado"/>
+				</alt>
+				<alt mandatory="true" name="Piq_Lotacao">
+					<feature name="Piq_Lot_Alta"/>
+					<feature name="Piq_Lot_Media"/>
+					<feature name="Piq_Lot_Baixa"/>
+				</alt>
+			</and>
+			<and mandatory="true" name="Gramínea">
+				<alt mandatory="true" name="Gram_Tamanho">
+					<feature name="Gram_Tam_Alta"/>
+					<feature name="Gram_Tam_Media"/>
+					<feature name="Gram_Tam_Baixa"/>
+				</alt>
+				<alt mandatory="true" name="Gram_Coloracao">
+					<feature name="Gram_Col_Verde"/>
+					<feature name="Gram_Col_Amarela"/>
+				</alt>
+			</and>
+			<alt mandatory="true" name="Cocho">
+				<feature name="Cocho_Cheio"/>
+				<feature name="Cocho_Vazio"/>
+			</alt>
+			<and mandatory="true" name="Tanque">
+				<feature name="Tan_Cheio"/>
+				<feature name="Tan_Vazio"/>
+			</and>
+			<and mandatory="true" name="Mangueiro">
+				<feature name="Man_Disponivel"/>
+				<feature name="Man_Ocupado"/>
+			</and>
+			<and name="Area">
+				<graphics key="collapsed" value="false"/>
+				<and name="Area_Disponivel">
+					<feature name="Area_Disp_Embarque"/>
+					<feature name="Area_Disp_Desembarque"/>
+				</and>
+				<and name="Area_Ocupado">
+					<feature name="Area_Ocup_Embarque"/>
+					<feature name="Area_Ocup_Desembarque"/>
+				</and>
+			</and>
+			<feature name="Manejo"/>
+			<feature name="Sede"/>
+			<and name="Estacao">
+				<feature name="Est_Primavera"/>
+				<feature name="Est_Outono"/>
+				<feature name="Est_Inverno"/>
+				<feature name="Est_Verao"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Piq_Lot_Alta</var>
+				<var>Gram_Tam_Baixa</var>
+			</imp>
+		</rule>
+	</constraints>
+</extendedFeatureModel>

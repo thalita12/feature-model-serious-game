@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="JogoSerio"/>
+	<feature automatic="selected" name="Boi"/>
+	<feature automatic="selected" name="Boi_Peso"/>
+	<feature name="Boi_Peso_Gordo"/>
+	<feature name="Boi_Peso_Magro"/>
+	<feature automatic="selected" name="Boi_Saude"/>
+	<feature manual="selected" name="Boi_Sad_Normal"/>
+	<feature automatic="unselected" name="Boi_Sad_Doente"/>
+	<feature automatic="unselected" name="Boi_Sad_Tratamento"/>
+	<feature automatic="selected" name="Piquete"/>
+	<feature automatic="selected" name="Piq_Condicao"/>
+	<feature manual="selected" name="Piq_Cond_Normal"/>
+	<feature automatic="unselected" name="Piq_Cond_Danificado"/>
+	<feature automatic="selected" name="Piq_Lotacao"/>
+	<feature manual="selected" name="Piq_Lot_Alta"/>
+	<feature automatic="unselected" name="Piq_Lot_Media"/>
+	<feature automatic="unselected" name="Piq_Lot_Baixa"/>
+	<feature automatic="selected" name="Gramínea"/>
+	<feature automatic="selected" name="Gram_Tamanho"/>
+	<feature automatic="unselected" name="Gram_Tam_Alta"/>
+	<feature automatic="unselected" name="Gram_Tam_Media"/>
+	<feature automatic="selected" name="Gram_Tam_Baixa"/>
+	<feature automatic="selected" name="Gram_Coloracao"/>
+	<feature name="Gram_Col_Verde"/>
+	<feature name="Gram_Col_Amarela"/>
+	<feature automatic="selected" name="Cocho"/>
+	<feature manual="selected" name="Cocho_Cheio"/>
+	<feature automatic="unselected" name="Cocho_Vazio"/>
+	<feature name="Tanque"/>
+	<feature name="Tan_Cheio"/>
+	<feature name="Tan_Vazio"/>
+	<feature name="Mangueiro"/>
+	<feature name="Man_Disponivel"/>
+	<feature name="Man_Ocupado"/>
+	<feature name="Area"/>
+	<feature name="Area_Disponivel"/>
+	<feature name="Area_Disp_Embarque"/>
+	<feature name="Area_Disp_Desembarque"/>
+	<feature name="Area_Ocupado"/>
+	<feature name="Area_Ocup_Embarque"/>
+	<feature name="Area_Ocup_Desembarque"/>
+	<feature name="Manejo"/>
+	<feature name="Sede"/>
+	<feature name="Estacao"/>
+	<feature name="Est_Primavera"/>
+	<feature name="Est_Outono"/>
+	<feature name="Est_Inverno"/>
+	<feature name="Est_Verao"/>
+</configuration>
